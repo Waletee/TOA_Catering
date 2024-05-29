@@ -1,0 +1,130 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOA Catering</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Box Icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="header">
+      <a href="Index.html" class="logo">TOA Catering</a>
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="Index.html" class="static">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+      <div class="slider-images">
+        <div class="slider-img">
+          <img src="public/Images/Fufu & vegetable soup.jpeg" alt="1" />
+          <h1>Local Dish</h1>
+          <div class="details">
+            <h2>Nigerian Dish</h2>
+            <p>Well Ganished Fufu & Vegetable Soup</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="public/Images/Burger.jpeg" alt="2" />
+          <h1>Foreign Cousine</h1>
+          <div class="details">
+            <h2>hamburger</h2>
+            <p>This a US standard hamburger</p>
+          </div>
+        </div>
+        <div class="slider-img active">
+          <img src="public/Images/Company image.jpeg" alt="3" />
+          <h1>Couple of Dishes</h1>
+          <div class="details">
+            <h2>Local & Foreign Cousine</h2>
+            <p>Variety of dishes we can deliver</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="public/Images/Spagetti Fuiets.jpeg" alt="4" />
+          <h1>Foreign Cousine</h1>
+          <div class="details">
+            <h2>Spagetti Fuiets</h2>
+            <p>Australian breakfash dish with some spinach</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="public/Images/Iyan & Okro.jpeg" alt="5" />
+          <h1>Local Dish</h1>
+          <div class="details">
+            <h2>Nigerian Dish</h2>
+            <p>Pounded Yam & a top notch Okro Soup
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="about-content">
+        <h2 class="heading">About Us</h2>
+        <h3>We're a food vendor</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut adipisci, quibusdam repudiandae quis repellendus nulla tenetur, dolorem amet voluptate harum modi repellat odio? Facilis, hic officiis consectetur soluta laboriosam sint?
+        </p>
+        <button>More Details</button>
+      </div>
+      <div class="about-img">
+        <img src="public/Images/Company image.jpeg" alt="" />
+      </div>
+    </section>
+
+    <!-- contacts Section -->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact Us</h2>
+      <h4>Let's Give you nice and delicious cousine</h4>
+      <p>For more enquiries/order, you can reach us through email or whatsapp</p>
+      <div class="contact-list">
+        <li><i class="bx bx-envelope"></i>toa@email.com</li>
+        &nbsp; &nbsp; &nbsp;
+        <li><i class="bx bxl-whatsapp"></i>(+234)80-5555-5555</li>
+        &nbsp; &nbsp; &nbsp;
+        <li><i class="bx bx-map-alt"></i>Ilorin Kwara State, Nigeria</li>
+        <div class="contact-soc">
+          <a href="#"><i class="bx bxl-github"></i></a>
+          <a href="#"><i class="bx bxl-linkedin"></i></a>
+          <a href="#"><i class="bx bxl-twitter"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2024 by TOA Technologies | All Rights Reserved.</p>
+      </div>
+      <div class="footer-iconHome">
+        <a href="Index.html"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+    </footer>
+
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Custom Js -->
+    <script src="../scripts.js"></script>
+    <script src="../jQuery.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        $(".slider-img").on("click", function () {
+          $(".slider-img").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>
